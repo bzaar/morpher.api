@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD26D20A-D6AE-42E7-AC4B-29B0833ED2D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Morpher</RootNamespace>
+    <AssemblyName>Morpher.API</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Morpher.API.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DocumentationFile>bin\Release\Morpher.API.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppConfig\ConfigurationSectionHandler.cs" />
+    <Compile Include="DynamicDeclension.cs" />
+    <Compile Include="AppConfig\Factory.cs" />
+    <Compile Include="HttpUserAgentEndpointBehavior.cs" />
+    <Compile Include="HttpUserAgentMessageInspector.cs" />
+    <Compile Include="ISpeller.cs" />
+    <Compile Include="MorpherExtensions.cs" />
+    <Compile Include="ParameterHelper.cs" />
+    <Compile Include="Russian\EnglishInitials.cs" />
+    <Compile Include="Russian\FullParadigm.cs" />
+    <Compile Include="Russian\GenericDeclension.cs" />
+    <Compile Include="Interfaces.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Russian\Case.cs" />
+    <Compile Include="Russian\GenericNumberSpelling.cs" />
+    <Compile Include="Russian\Interfaces.cs" />
+    <Compile Include="Russian\Paradigm.cs" />
+    <Compile Include="Russian\RussianInitials.cs" />
+    <Compile Include="Service References\MorpherWebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Ukrainian\Case.cs" />
+    <Compile Include="Ukrainian\FullParadigm.cs" />
+    <Compile Include="Ukrainian\GenericDeclension.cs" />
+    <Compile Include="Ukrainian\GenericNumberSpelling.cs" />
+    <Compile Include="Ukrainian\Interfaces.cs" />
+    <Compile Include="Ukrainian\Paradigm.cs" />
+    <Compile Include="Ukrainian\UkrainianInitials.cs" />
+    <Compile Include="WebServiceClient.cs" />
+    <Compile Include="WebServiceParameters.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MorpherWebService\Morpher.MorpherWebService.GetXmlResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MorpherWebService\Morpher.MorpherWebService.GetXmlUkrResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MorpherWebService\Morpher.MorpherWebService.PropisResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MorpherWebService\Morpher.MorpherWebService.PropisUkrResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MorpherWebService\WebService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\MorpherWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MorpherWebService\WebService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MorpherWebService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MorpherWebService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\MorpherWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
