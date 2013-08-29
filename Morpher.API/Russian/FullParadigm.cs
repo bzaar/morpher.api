@@ -47,5 +47,10 @@ namespace Morpher.Russian
         {
             get { throw new NotImplementedException (); }
         }
+
+        string IFullParadigm.Paucal
+        {
+            get { throw new NotImplementedException (); }
+        }
     }
 }
