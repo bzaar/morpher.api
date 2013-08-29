@@ -1,8 +1,6 @@
 # Ignored files
 *.suo 
 *.user 
-bin 
-obj 
 *.pdb 
 *.cache 
 *_svn 
@@ -14,3 +12,5 @@ TestResults
 _ReSharper*
 *Publish.xml
 MorpherSDK.zip
+*/bin/*
+*/obj/*
