@@ -1,0 +1,14 @@
+# Ignored files
+*.suo 
+*.user 
+bin 
+obj 
+*.pdb 
+*.cache 
+*_svn 
+*.svn 
+*.suo 
+*.user 
+*.build-res 
+TestResults 
+_ReSharper*
