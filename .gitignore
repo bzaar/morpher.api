@@ -12,3 +12,4 @@ obj
 *.build-res 
 TestResults 
 _ReSharper*
+*Publish.xml
