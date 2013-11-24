@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Text;
+using Morpher.Generic;
 
 namespace Morpher.API.Samples
 {

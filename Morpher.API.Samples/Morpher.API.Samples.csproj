@@ -60,6 +60,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Morpher.AppConfigFactory\Morpher.AppConfigFactory.csproj">
+      <Project>{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}</Project>
+      <Name>Morpher.AppConfigFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morpher.Generic\Morpher.Generic.csproj">
+      <Project>{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}</Project>
+      <Name>Morpher.Generic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morpher.WebService.V2\Morpher.WebService.V2.csproj">
+      <Project>{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}</Project>
+      <Name>Morpher.WebService.V2</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Morpher.API\Morpher.API.csproj">
       <Project>{CD26D20A-D6AE-42E7-AC4B-29B0833ED2D4}</Project>
       <Name>Morpher.API</Name>

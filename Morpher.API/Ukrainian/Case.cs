@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Morpher.Ukrainian
 {
-    public class Case : ICase<IParadigm>
+    public class Case : ICase <IParadigm>
     {
         private readonly Func <IParadigm, string> func;
 
@@ -12,9 +12,9 @@ namespace Morpher.Ukrainian
             this.func = func;
         }
 
-        public string Get(IParadigm paradigm)
+        public string Get (IParadigm paradigm)
         {
-            return func(paradigm);
+            return func (paradigm);
         }
 
         public static Case Nominative    = new Case(p => p.Nominative   );

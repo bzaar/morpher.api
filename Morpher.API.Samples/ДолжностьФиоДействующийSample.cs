@@ -14,22 +14,20 @@ namespace Morpher.API.Samples
         /// </summary>
         static string ДолжностьФиоДействующий (string должность, string фио, Case @case)
         {
-            var fio = Factory.Russian.Declension.Analyse(фио); // TODO: Category.FIO
+            // Получить объект IDeclension, при помощи которого будем склонять.
+            var declension = Factory.Russian.Declension;
+
+            // Указание категории Name (имя человека) необязательно, 
+            // но помогает программе в сложных случаях типа Любовь - Любови или Любви?
+            var fio = declension.Parse (фио, Category.Name);
 
             // Согласовать слово "действующий" по роду с ФИО.
             string действующий = fio.Gender.Get(new Действующий());
 
-            var парадигмыСоставляющих = new []
-                                            {
-                                                Factory.Russian.Declension.Analyse(должность),
-                                                fio,
-                                                Factory.Russian.Declension.Analyse(действующий)
-                                            };
+            var составляющие = new [] {declension.Parse(должность), fio, declension.Parse(действующий)};
 
-            // Поставить все составляющие в нужный падеж.
-            var составляющие = парадигмыСоставляющих.Select(@case.Get);
-
-            return String.Format ("{0} {1}, {2}", составляющие.ToArray());
+            // Поставить все составляющие в нужный падеж и расставить знаки препинания.
+            return String.Format ("{0} {1}, {2}", составляющие.Select(@case.Get).ToArray());
         }
 
         // Склонение по родам пока не реализовано.  Но для одного слова его несложно реализовать вручную:

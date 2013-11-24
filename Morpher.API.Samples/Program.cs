@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Morpher;
+using Morpher.Generic;
 
 namespace Morpher.API.Samples
 {
@@ -9,7 +10,7 @@ namespace Morpher.API.Samples
     {
         static void Main()
         {
-            Console.WriteLine (Factory.Russian.Declension.Analyse("asdfasdfasdf").Dative);
+            Console.WriteLine (Factory.Russian.Declension.Parse("asdfasdfasdf").Dative);
 
             // Склоняем на разных языках одной и той же функцией:
             PrintAll (GetAllCases (Factory.Russian.Declension.AsGeneric(), "кот"));
@@ -30,14 +31,14 @@ namespace Morpher.API.Samples
                                                СокращенноеНаименованиеЦелойЧасти = "евро"
                                            };
 
-            СуммаПрописью.СуммаПрописьюНаРазныхЯзыках (Factory.Russian.Generic.NumberSpelling, рубли, Russian.Case.Prepositional);
+            СуммаПрописью.СуммаПрописьюНаРазныхЯзыках (Factory.Russian.NumberSpelling.AsGeneric(), рубли, Russian.Case.Prepositional);
         }
 
 
 
         private static IEnumerable <string> GetAllCases <TParadigm> (IDeclension <TParadigm> lang, string s)
         {
-            var analysed = lang.Analyse(s);
+            var analysed = lang.Parse(s);
 
             return lang.Cases.Select(c => analysed.Singular.Get(c));
         }

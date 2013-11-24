@@ -1,4 +1,5 @@
 ﻿using System;
+using Morpher.Generic;
 
 namespace Morpher.API.Samples
 {
