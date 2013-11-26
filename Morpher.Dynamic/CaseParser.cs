@@ -13,7 +13,7 @@ namespace Morpher
             caseNames = language.Cases.ToDictionary (@case => names.Get (@case));
         }
 
-        public bool TryParse (string s, out ICase<TParadigm> @case)
+        public bool TryParse (string s, out ICase <TParadigm> @case)
         {
             return caseNames.TryGetValue (s, out @case);
         }

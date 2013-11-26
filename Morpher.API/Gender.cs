@@ -2,24 +2,24 @@
 
 namespace Morpher
 {
-    public class Gender : IGender
+    public class Gender 
     {
-        private readonly Func <IGenderParadigm, string> func;
+        readonly Func <IGenderParadigm, string> func;
 
-        private Gender (Func<IGenderParadigm, string> func)
+        Gender (Func <IGenderParadigm, string> func)
         {
             this.func = func;
         }
 
-        string IGender.Get (IGenderParadigm paradigm)
+        public string Get (IGenderParadigm paradigm)
         {
             return func (paradigm);
         }
 
-        public static IGender Masculine = new Gender (p => p.Masculine);
-        public static IGender Feminine  = new Gender (p => p.Feminine);
-        public static IGender Neuter    = new Gender (p => p.Neuter);
-        public static IGender Plural    = new Gender (p => p.Plural);
+        public static Gender Masculine = new Gender (p => p.Masculine);
+        public static Gender Feminine  = new Gender (p => p.Feminine);
+        public static Gender Neuter    = new Gender (p => p.Neuter);
+        public static Gender Plural    = new Gender (p => p.Plural);
     }
 }
 

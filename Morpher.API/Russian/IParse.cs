@@ -16,7 +16,7 @@
         /// <summary>
         /// Gets the gender of the head word of the noun phrase.
         /// </summary>
-        IGender Gender {get;}
+        Gender Gender {get;}
 
         /// <summary>
         /// True if the word or noun phrase is animate, false otherwise.

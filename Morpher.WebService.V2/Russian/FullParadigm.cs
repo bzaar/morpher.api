@@ -12,7 +12,7 @@ namespace Morpher.Russian
             this.result = result;
         }
 
-        IGender IParse.Gender
+        Gender IParse.Gender
         {
             get 
             {

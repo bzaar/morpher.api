@@ -2,6 +2,6 @@
 {
     public interface IDeclension
     {
-        IParse Parse (string s);
+        IParse Parse (string s, ParseArgs args = null);
     }
 }

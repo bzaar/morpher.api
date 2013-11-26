@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Morpher;
 using Morpher.Generic;
 
 namespace Morpher.API.Samples
@@ -10,7 +9,7 @@ namespace Morpher.API.Samples
     {
         static void Main()
         {
-            Console.WriteLine (Factory.Russian.Declension.Parse("asdfasdfasdf").Dative);
+            Console.WriteLine (Factory.Russian.Declension.Parse("генеральный директор").Dative);
 
             // Склоняем на разных языках одной и той же функцией:
             PrintAll (GetAllCases (Factory.Russian.Declension.AsGeneric(), "кот"));

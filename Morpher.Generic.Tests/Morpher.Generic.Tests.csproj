@@ -45,7 +45,6 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnglishInitials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest1.cs" />
   </ItemGroup>
@@ -53,6 +52,10 @@
     <ProjectReference Include="..\Morpher.API\Morpher.API.csproj">
       <Project>{CD26D20A-D6AE-42E7-AC4B-29B0833ED2D4}</Project>
       <Name>Morpher.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Morpher.Generic\Morpher.Generic.csproj">
+      <Project>{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}</Project>
+      <Name>Morpher.Generic</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

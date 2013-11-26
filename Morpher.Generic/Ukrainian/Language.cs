@@ -7,7 +7,7 @@ namespace Morpher.Generic.Ukrainian
     {
         IEnumerable<ICase<IParadigm>> ILanguage<IParadigm>.Cases
         {
-            get { return Case.All; }
+            get { return Cases.AllCases; }
         }
 
         ICase<IParadigm> ILanguage<IParadigm>.Nominative

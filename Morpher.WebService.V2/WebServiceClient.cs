@@ -50,7 +50,7 @@ namespace Morpher
             return new Russian.Parse (soapClient.GetXml (credentials, s), s);
         }
 
-        Ukrainian.IParse Ukrainian.IDeclension.Parse(string s)
+        Ukrainian.IParse Ukrainian.IDeclension.Parse(string s, Ukrainian.ParseArgs args)
         {
             return new Ukrainian.Parse (soapClient.GetXmlUkr (credentials, s), s);
         }
@@ -59,9 +59,9 @@ namespace Morpher
         {
             var result = soapClient.Propis (credentials, (uint) n, unit);
 
-            unit = new RussianUnitParadigm (result.unit).Get(@case);
+            unit = new Russian.UnitParadigm (result.unit).Get(@case);
 
-            return new RussianUnitParadigm (result.n).Get(@case);
+            return new Russian.UnitParadigm (result.n).Get(@case);
         }
 
         string Ukrainian.INumberSpelling.Spell (decimal n, ref string unit, ICase<Ukrainian.IParadigm> @case)
@@ -71,26 +71,6 @@ namespace Morpher
             unit = new Ukrainian.Paradigm (result.unit).Get (@case);
 
             return new Ukrainian.Paradigm (result.n).Get (@case);
-        }
-
-        class RussianUnitParadigm : Russian.Paradigm
-        {
-            private readonly Forms forms;
-
-            public RussianUnitParadigm (Forms forms) : base (forms.И)
-            {
-                this.forms = forms;
-            }
-
-            protected override Forms Forms
-            {
-                get { return forms; }
-            }
-
-            protected override string Locative
-            {
-                get { return forms.П; } // Совпадает с предложным.
-            }
         }
     }
 }

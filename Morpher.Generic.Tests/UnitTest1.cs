@@ -18,7 +18,7 @@ namespace Morpher.API.Tests
         public void TestOrderOfRussianCases ()
         {
             Assert.AreEqual ("NGDAIPL", 
-                String.Join("", Case.All.Select (c => c.Get (new EnglishInitials ()))));
+                String.Join("", Cases.AllCases.Select (c => c.Get (new EnglishInitials ()))));
         }
     }
 }
