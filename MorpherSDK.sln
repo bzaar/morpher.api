@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.API.AspNetSamples",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.API.Samples", "Morpher.API.Samples\Morpher.API.Samples.csproj", "{59C5BDFB-1041-470A-A553-E7FE7E709394}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.API.Tests", "Morpher.API.Tests\Morpher.API.Tests.csproj", "{114C6352-9534-451E-93DF-D5179658E6FB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.AppConfigFactory", "Morpher.AppConfigFactory\Morpher.AppConfigFactory.csproj", "{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Dynamic", "Morpher.Dynamic\Morpher.Dynamic.csproj", "{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}"
@@ -16,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Generic", "Morpher.Generic\Morpher.Generic.csproj", "{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.WebService.V2", "Morpher.WebService.V2\Morpher.WebService.V2.csproj", "{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Generic.Tests", "Morpher.Generic.Tests\Morpher.Generic.Tests.csproj", "{114C6352-9534-451E-93DF-D5179658E6FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,6 @@ Global
 		{59C5BDFB-1041-470A-A553-E7FE7E709394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59C5BDFB-1041-470A-A553-E7FE7E709394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59C5BDFB-1041-470A-A553-E7FE7E709394}.Release|Any CPU.Build.0 = Release|Any CPU
-		{114C6352-9534-451E-93DF-D5179658E6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{114C6352-9534-451E-93DF-D5179658E6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{114C6352-9534-451E-93DF-D5179658E6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{114C6352-9534-451E-93DF-D5179658E6FB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,6 +51,10 @@ Global
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{114C6352-9534-451E-93DF-D5179658E6FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{114C6352-9534-451E-93DF-D5179658E6FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{114C6352-9534-451E-93DF-D5179658E6FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{114C6352-9534-451E-93DF-D5179658E6FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
