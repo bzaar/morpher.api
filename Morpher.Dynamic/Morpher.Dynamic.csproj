@@ -36,10 +36,10 @@
   <ItemGroup>
     <Compile Include="CaseParser.cs" />
     <Compile Include="DynamicDeclension.cs" />
-    <Compile Include="DynamicExtensions.cs" />
     <Compile Include="DynamicSpeller.cs" />
     <Compile Include="IDynamicDeclension.cs" />
     <Compile Include="IDynamicSpeller.cs" />
+    <Compile Include="MorpherDynamicExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

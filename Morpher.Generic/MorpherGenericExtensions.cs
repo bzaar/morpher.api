@@ -1,6 +1,6 @@
 ﻿using Morpher.Generic;
 
-public static class MorpherExtensions
+public static class MorpherGenericExtensions
 {
     public static IDeclension<Morpher.Russian.IParadigm> AsGeneric (this Morpher.Russian.IDeclension declension)
     {

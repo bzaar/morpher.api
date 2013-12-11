@@ -1,6 +1,6 @@
 ﻿using Morpher.Generic;
 
-namespace Morpher.Russian.Tests
+namespace Morpher
 {
     public class DynamicSpeller <TParadigm> : IDynamicSpeller
     {

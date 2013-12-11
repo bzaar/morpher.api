@@ -1,4 +1,4 @@
-﻿namespace Morpher.Russian.Tests
+﻿namespace Morpher
 {
     public interface IDynamicSpeller
     {

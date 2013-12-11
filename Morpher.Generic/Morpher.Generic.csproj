@@ -39,7 +39,7 @@
     <Compile Include="ILanguage.cs" />
     <Compile Include="INumberSpelling.cs" />
     <Compile Include="ISpeller.cs" />
-    <Compile Include="MorpherExtensions.cs" />
+    <Compile Include="MorpherGenericExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Russian\Cases.cs" />
     <Compile Include="Russian\Declension.cs" />
