@@ -31,12 +31,12 @@ namespace Morpher.API.Samples
         }
 
         // Склонение по родам пока не реализовано.  Но для одного слова его несложно реализовать вручную:
-        class Действующий : IGenderParadigm
+        class Действующий : IGenderParadigm<string>
         {
-            string IGenderParadigm.Masculine  {get { return "действующий"; }}
-            string IGenderParadigm.Feminine   {get { return "действующая"; }}
-            string IGenderParadigm.Neuter     {get { return "действующее"; }}
-            string IGenderParadigm.Plural     {get { return "действующие"; }}
+            public string Masculine  {get { return "действующий"; }}
+            public string Feminine   {get { return "действующая"; }}
+            public string Neuter     {get { return "действующее"; }}
+            public string Plural     {get { return "действующие"; }}
         }
 
         [TestMethod]

@@ -1,10 +1,10 @@
 ﻿namespace Morpher
 {
-    public interface IGenderParadigm
+    public interface IGenderParadigm<out T>
     {
-        string Masculine {get;}
-        string Feminine  {get;}
-        string Neuter    {get;}
-        string Plural    {get;}
+        T Masculine {get;}
+        T Feminine  {get;}
+        T Neuter    {get;}
+        T Plural    {get;}
     }
 }

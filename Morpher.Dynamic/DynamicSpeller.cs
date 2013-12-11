@@ -10,7 +10,7 @@ namespace Morpher
         public DynamicSpeller (INumberSpelling<TParadigm> genericSpeller, TParadigm caseNames)
         {
             this.genericSpeller = genericSpeller;
-            this.caseParser = new CaseParser <TParadigm> (genericSpeller, caseNames);
+            this.caseParser = new CaseParser <TParadigm> (genericSpeller.Cases, caseNames);
         }
 
         string IDynamicSpeller.Spell(decimal n, ref string unit, string @case)

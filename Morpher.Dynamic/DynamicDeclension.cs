@@ -10,7 +10,7 @@ namespace Morpher
         public DynamicDeclension (IDeclension <TParadigm> inner, TParadigm caseNames)
         {
             this.inner = inner;
-            this.caseParser = new CaseParser <TParadigm> (inner, caseNames);
+            this.caseParser = new CaseParser <TParadigm> (inner.Cases, caseNames);
         }
 
         public string GetCase (string phrase, string @case)

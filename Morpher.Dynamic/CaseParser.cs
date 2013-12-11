@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Morpher.Generic;
 
 namespace Morpher
 {
@@ -8,9 +7,9 @@ namespace Morpher
     {
         readonly Dictionary <string, ICase <TParadigm>> caseNames;
 
-        public CaseParser (ILanguage <TParadigm> language, TParadigm names)
+        public CaseParser (IEnumerable <ICase <TParadigm>> cases, TParadigm names)
         {
-            caseNames = language.Cases.ToDictionary (@case => names.Get (@case));
+            caseNames = cases.ToDictionary (@case => names.Get (@case));
         }
 
         public bool TryParse (string s, out ICase <TParadigm> @case)

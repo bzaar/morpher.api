@@ -1,25 +1,47 @@
-﻿using System;
-
-namespace Morpher
+﻿namespace Morpher
 {
-    public class Gender 
+    public abstract class Gender 
     {
-        readonly Func <IGenderParadigm, string> func;
+        public abstract T Get <T> (IGenderParadigm<T> p);
 
-        Gender (Func <IGenderParadigm, string> func)
+        class _Masculine : Gender
         {
-            this.func = func;
+            public override T Get <T> (IGenderParadigm<T> p)
+            {
+                return p.Masculine;
+            }
         }
 
-        public string Get (IGenderParadigm paradigm)
+        class _Feminine : Gender
         {
-            return func (paradigm);
+            public override T Get <T> (IGenderParadigm<T> p)
+            {
+                return p.Feminine;
+            }
         }
 
-        public static Gender Masculine = new Gender (p => p.Masculine);
-        public static Gender Feminine  = new Gender (p => p.Feminine);
-        public static Gender Neuter    = new Gender (p => p.Neuter);
-        public static Gender Plural    = new Gender (p => p.Plural);
+        class _Neuter : Gender
+        {
+            public override T Get <T> (IGenderParadigm<T> p)
+            {
+                return p.Neuter;
+            }
+        }
+
+        class _Plural : Gender
+        {
+            public override T Get <T> (IGenderParadigm<T> p)
+            {
+                return p.Masculine;
+            }
+        }
+
+        public static Gender Masculine = new _Masculine ();
+        public static Gender Feminine  = new _Feminine ();
+        public static Gender Neuter    = new _Neuter ();
+        public static Gender Plural    = new _Plural ();
     }
 }
+
+
 
