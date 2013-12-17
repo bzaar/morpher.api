@@ -15,4 +15,7 @@
     </p>
 
     <cc1:FlushingLiteral ID="FlushingLiteral1" runat="server" />
+
+    <p> <a href='https://github.com/bzaar/morpher.api/blob/master/Morpher.API.AspNetSamples/FacebookStory.cs'>Код примера</a></p>
+
 </asp:Content>

@@ -4,9 +4,9 @@ using System.ServiceModel;
 using System.Xml;
 using Morpher.WebService.V2.MorpherWebService;
 
-namespace Morpher
+namespace Morpher.WebService.V2
 {
-    public class WebServiceClient
+    public class Client
         : Russian.IDeclension
         , Ukrainian.IDeclension
         , Russian.INumberSpelling
@@ -15,13 +15,13 @@ namespace Morpher
         private readonly WebServiceSoapClient soapClient;
         private readonly Credentials credentials;
 
-        public WebServiceClient () : this ((WebServiceParameters) null)
+        public Client () : this ((Parameters) null)
         {
         }
 
-        public WebServiceClient (WebServiceParameters parameters)
+        public Client (Parameters parameters)
         {
-            parameters = parameters ?? new WebServiceParameters ();
+            parameters = parameters ?? new Parameters ();
 
             string url = parameters.Url ?? "http://morpher.ru/WebService.asmx";
 
@@ -37,8 +37,8 @@ namespace Morpher
             };
         }
 
-        public WebServiceClient (XmlNode parameters)
-            : this (new WebServiceParameters {
+        public Client (XmlNode parameters)
+            : this (new Parameters {
                 Url      = parameters.GetAttributeOrNull ("url"),
                 Username = parameters.GetAttributeOrNull ("username"),
                 Password = parameters.GetAttributeOrNull ("password")})

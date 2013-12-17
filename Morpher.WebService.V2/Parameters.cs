@@ -1,6 +1,6 @@
-﻿namespace Morpher
+﻿namespace Morpher.WebService.V2
 {
-    public class WebServiceParameters
+    public class Parameters
     {
         /// <summary>
         /// URL веб-сервиса.  Необязательный.  По умолчанию http://morpher.ru/WebService.asmx.

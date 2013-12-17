@@ -51,8 +51,8 @@
     </Compile>
     <Compile Include="Ukrainian\FullParadigm.cs" />
     <Compile Include="Ukrainian\Paradigm.cs" />
-    <Compile Include="WebServiceClient.cs" />
-    <Compile Include="WebServiceParameters.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Parameters.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Morpher.API\Morpher.API.csproj">
@@ -64,7 +64,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
     <None Include="Service References\MorpherWebService\Morpher.WebService.V2.MorpherWebService.GetXmlResult.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
