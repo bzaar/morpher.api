@@ -5,7 +5,7 @@ using Morpher.Generic;
 
 namespace Morpher.API.Samples
 {
-    class Program
+    static class Program
     {
         static void Main()
         {
@@ -32,8 +32,6 @@ namespace Morpher.API.Samples
 
             СуммаПрописью.СуммаПрописьюНаРазныхЯзыках (Factory.Russian.NumberSpelling.AsGeneric(), рубли, Russian.Case.Prepositional);
         }
-
-
 
         private static IEnumerable <string> GetAllCases <TParadigm> (IDeclension <TParadigm> lang, string s)
         {

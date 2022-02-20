@@ -5,8 +5,6 @@
 *.cache 
 *_svn 
 *.svn 
-*.suo 
-*.user 
 *.build-res 
 TestResults 
 _ReSharper*
@@ -14,3 +12,4 @@ _ReSharper*
 MorpherSDK.zip
 */bin/*
 */obj/*
+.idea/*
