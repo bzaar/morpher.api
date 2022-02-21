@@ -32,7 +32,7 @@
         {
             public override T Get <T> (IGenderParadigm<T> p)
             {
-                return p.Masculine;
+                return p.Plural;
             }
         }
 
