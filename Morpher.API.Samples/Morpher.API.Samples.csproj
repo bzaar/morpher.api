@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Morpher.API\Morpher.API.csproj" />
     <ProjectReference Include="..\Morpher.AppConfigFactory\Morpher.AppConfigFactory.csproj" />
-    <ProjectReference Include="..\Morpher.Generic\Morpher.Generic.csproj" />
     <ProjectReference Include="..\Morpher.WebService.V2\Morpher.WebService.V2.csproj" />
   </ItemGroup>
 
