@@ -9,10 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.API.Samples", "Morp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.AppConfigFactory", "Morpher.AppConfigFactory\Morpher.AppConfigFactory.csproj", "{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Dynamic", "Morpher.Dynamic\Morpher.Dynamic.csproj", "{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Generic", "Morpher.Generic\Morpher.Generic.csproj", "{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.WebService.V2", "Morpher.WebService.V2\Morpher.WebService.V2.csproj", "{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Morpher.Generic.Tests", "Morpher.Generic.Tests\Morpher.Generic.Tests.csproj", "{114C6352-9534-451E-93DF-D5179658E6FB}"
@@ -39,14 +35,6 @@ Global
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6C7A1B3-9CF0-4D59-8C7B-74210EFADF4B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B50C33C2-6F5E-4290-ACE7-F2C4325D5C21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{573DFC63-9C99-481E-862F-7A6EFC0BF1EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{048BF415-66D0-452C-AFAE-1FEBB8D1B29B}.Release|Any CPU.ActiveCfg = Release|Any CPU
